@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART-INMO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Banner -->
+    <div class="bg-primary text-white text-center py-1">
+        <h1>SMART-INMO</h1>
+    </div>
+
+    <!-- Título -->
+    <div class="container my-3">
+        <h2 class="text-center">Cansado de listados de propiedades en Excel INTERMINABLES?<br> 
+        A golpe de clic consigue ahorrar horas de tiempo y bienestar para ti!</h2>
+    </div>
+
+    <!-- Imágenes con texto -->
+    <div class="container my-4">
+        <div class="row text-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="https://media.gcflearnfree.org/content/605a19eda3bdb83cecad8936_03_23_2021/archivo.png" class="card-img-top" alt="Imagen 1">
+                    <div class="card-body">
+                        <h5 class="card-title">ANTES: EXCEL</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="https://media.gcflearnfree.org/content/605a19eda3bdb83cecad8936_03_23_2021/archivo.png" class="card-img-top" alt="Imagen 2">
+                    <div class="card-body">
+                        <h5 class="card-title">AHORA: ⭐</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Texto -->
+    <div class="container my-5">
+        <h2 class="text-center">EMPIEZA GRATIS</h2>
+        <p class="text-center">Sin tarjeta de credito, Sin iniciar sesion</p>
+    </div>
+    <!--Finalizado-->
+
+    <!-- Mensaje limite de inmuebles LIMITE ALCANZADO-->
+    <div id="mesage" class="container my-5">
+        <p class="alert alert-info">
+            Limite de <strong>100 inmuebles</strong> con referencia catastral. Unete al plan premium.
+        </p>
+        
+        <!-- Formulario de filtros -->
+        <h3>Que inmuebles te interesan?</h3>
+        <form id="formularioConsulta" class="mt-4">
+            <!-- Tipo de inmueble -->
+            <div class="mb-3">
+                <label class="form-label">Tipo de Inmueble: </label>
+                <div class="btn-group" role="group" aria-label="Tipo de Inmueble">
+                    <input type="checkbox" class="btn-check" id="Residencial" autocomplete="off" name="clase" value="Residencial">
+                    <label class="btn btn-outline-primary" for="Residencial">Residencial</label>
+            
+                    <input type="checkbox" class="btn-check" id="comercial" autocomplete="off" name="clase" value="Comercial">
+                    <label class="btn btn-outline-primary" for="comercial">Comercial</label>
+            
+                    <input type="checkbox" class="btn-check" id="industrial" autocomplete="off" name="clase" value="Industrial">
+                    <label class="btn btn-outline-primary" for="industrial">Industrial</label>
+            
+                    <input type="checkbox" class="btn-check" id="agrario" autocomplete="off" name="clase" value="Agrario">
+                    <label class="btn btn-outline-primary" for="agrario">Agrario</label>
+                </div>
+            </div>
+
+            <!-- Superficie construida -->
+            <div class="mb-3">
+                <label for="metrosConstruidosMin" class="form-label">Superficie construida (m²):</label>
+                <div class="input-group">
+                    <input type="number" id="metrosConstruidosMin" class="form-control" placeholder="Mínimo">
+                    <input type="number" id="metrosConstruidosMax" class="form-control" placeholder="Máximo">
+                </div>
+            </div>
+
+            <!-- Ubicación -->
+            <div class="mb-3">
+                <label for="ubicacion" class="form-label">Ubicación:</label>
+                <input type="text" id="provincias" class="form-control mb-2" placeholder="Provincias (separadas por comas)">
+                <input type="text" id="ciudades" class="form-control mb-2" placeholder="Ciudades (separadas por comas)">
+                <input type="text" id="barrios" class="form-control" placeholder="Barrios (Código Postal) (separadas por comas)">
+            </div>
+
+            <!-- Planta -->
+            <div class="mb-3">
+                <div class="row">
+                    <!-- Selector de mínimo -->
+                    <div class="col-md-6">
+                        <label for="plantaMin" class="form-label">Elige Plantas - Mínimo:</label>
+                        <select id="plantaMin" class="form-select">
+                            <option value="-05">-5</option>
+                            <option value="-04">-4</option>
+                            <option value="-03">-3</option>
+                            <option value="-02">-2</option>
+                            <option value="-01">-1</option>
+                            <option value="00">0</option>
+                            <option value="EN">Entresuelo</option>
+                            <option value="01">1</option>
+                            <option value="02">2</option>
+                            <option value="03">3</option>
+                            <option value="04">4</option>
+                            <option value="05">5</option>
+                        </select>
+                    </div>
+                    <!-- Selector de máximo -->
+                    <div class="col-md-6">
+                        <label for="plantaMax" class="form-label">Máximo:</label>
+                        <select id="plantaMax" class="form-select">
+                            <option value="-05">-5</option>
+                            <option value="-04">-4</option>
+                            <option value="-03">-3</option>
+                            <option value="-02">-2</option>
+                            <option value="-01">-1</option>
+                            <option value="00">0</option>
+                            <option value="EN">Entresuelo</option>
+                            <option value="01">1</option>
+                            <option value="02">2</option>
+                            <option value="03">3</option>
+                            <option value="04">4</option>
+                            <option value="05">5</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Año construcción -->
+            <div class="mb-3">
+                <label for="añoConstruccionMin" class="form-label">Año construcción:</label>
+                <div class="input-group">
+                    <input type="number" id="añoConstruccionMin" class="form-control" placeholder="Mínimo">
+                    <input type="number" id="añoConstruccionMax" class="form-control" placeholder="Máximo">
+                </div>
+            </div>
+            <!-- Coloca tu Excel -->
+            <div class="mb-3">
+                <label for="fileInput" class="form-label">Coloca tu Excel:</label>
+                <input type="file" id="fileInput" class="form-control mb-3" accept=".xlsx, .xls">
+                <button type="button" class="btn btn-primary btn-lg" onclick="consultarDatos(event)">Analizar</button>
+            </div>
+            <!-- Resultado de Referencias Catastrales-->
+            <div id="results" class="mt-4" style="display: none;">
+                <div id="result-container"></div>
+            </div>
+            <div id="resultado" class="mt-4">
+                <div id="result-container"></div>
+            </div>
+        </form>
+    </div>
+    <!-- Bootstrap JS, XLSX Library, OwnJS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="prueba01.js"></script>
+</body>
+</html>

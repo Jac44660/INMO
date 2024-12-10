@@ -1,0 +1,27 @@
+.result-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 12px; /* Bordes más redondeados */
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+}
+
+.result-block img {
+  width: 50px; /* Tamaño fijo */
+  height: 50px; /* Tamaño fijo */
+  object-fit: cover; /* Asegura que se ajuste bien al tamaño definido */
+  border-radius: 4px; /* Bordes redondeados */
+  margin-right: 20px;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  color: #555;
+}
+
